@@ -1,0 +1,7 @@
+{
+  "cSpell.enabled": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpenView"
+  ],
+  "commit-message-editor.view.defaultView": "form"
+}
