@@ -1,0 +1,12 @@
+{
+  "name": "kilov",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "extensions": [
+    "ms-vscode.cpptools-extension-pack",
+    "adam-bender.commit-message-editor",
+    "github.copilot",
+    "eamodio.gitlens",
+    "tabnine.tabnine-vscode"
+  ]
+}
