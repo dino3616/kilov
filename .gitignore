@@ -1,5 +1,6 @@
 # bin
 *.exe
+*.out
 
 # VScode workspace settings
 *.code-workspace
