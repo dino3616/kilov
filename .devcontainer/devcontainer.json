@@ -1,5 +1,6 @@
 {
   "name": "kilov",
+  "workspaceFolder": "kilov",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
   "extensions": [
