@@ -5,5 +5,5 @@ services:
     container_name: app
     build: ./
     volumes:
-      - ./:/kilov
+      - ./:/workspaces/kilov
     tty: true

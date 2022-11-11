@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
 
-WORKDIR /kilov
+WORKDIR /workspaces/kilov
 
 # hadolint ignore=DL3008
 RUN apt-get update \
