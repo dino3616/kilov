@@ -1,7 +1,7 @@
 {
-  "cSpell.enabled": false,
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpenView"
   ],
-  "commit-message-editor.view.defaultView": "form"
+  "commit-message-editor.view.defaultView": "form",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Preserve, SpacesBeforeTrailingComments: 4, PointerAlignment: Left, ColumnLimit: 0 }"
 }
