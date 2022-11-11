@@ -4,10 +4,12 @@
   "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
   "extensions": [
-    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cpptools",
     "adam-bender.commit-message-editor",
+    "usernamehw.errorlens",
     "github.copilot",
     "eamodio.gitlens",
+    "visualstudioexptteam.vscodeintellic",
     "tabnine.tabnine-vscode"
   ]
 }
