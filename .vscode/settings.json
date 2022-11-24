@@ -1,4 +1,6 @@
 {
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpenView"
   ],
