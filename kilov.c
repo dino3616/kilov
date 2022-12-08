@@ -100,6 +100,7 @@ enum KEY_ACTION {
     CTRL_S = 19,     /* Ctrl-s */
     CTRL_U = 21,     /* Ctrl-u */
     ESC = 27,        /* Escape */
+    HYPEHN = 45,     /* Hyphen */
     BACKSPACE = 127, /* Backspace */
     /* The following are just soft codes, not really reported by the
      * terminal directly. */
@@ -606,6 +607,26 @@ void editorMoveCursor(int key) {
                 }
             }
             break;
+        case HYPEHN:
+            if (E.cy == 0) {
+                if (E.rowoff) E.rowoff--;
+            } else {
+                E.cy -= 1;
+            }
+            E.cx = 0;
+
+            break;
+        case ENTER:
+            if (filerow < E.numrows) {
+                if (E.cy == E.screenrows - 1) {
+                    E.rowoff++;
+                } else {
+                    E.cy += 1;
+                }
+            }
+            E.cx = 0;
+
+            break;
     }
     /* Fix cx if the current line has not enough chars. */
     filerow = E.rowoff + E.cy;
@@ -660,6 +681,8 @@ void editorProcessKeypress(int fd) {
             }
             break;
 
+        case HYPEHN:
+        case ENTER:
         case ARROW_UP:
         case ARROW_DOWN:
         case ARROW_LEFT:
